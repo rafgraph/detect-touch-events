@@ -3,6 +3,14 @@
   "version": "0.0.0",
   "description": "Detect if the browser supports the touch events api",
   "main": "lib/index.js",
+  "scripts": {
+    "build": "rm -rf lib && babel src --presets babel-preset-es2015 -d lib",
+    "prepublish": "npm run build"
+  },
+  "files": [
+    "lib",
+    "src"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/rafrex/detect-touch-events.git"
