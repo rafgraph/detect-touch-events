@@ -1,0 +1,21 @@
+{
+  "name": "detect-touch-events",
+  "version": "0.0.0",
+  "description": "Detect if the browser supports the touch events api",
+  "main": "lib/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rafrex/detect-touch-events.git"
+  },
+  "keywords": [
+    "touch",
+    "touch events",
+    "touch device"
+  ],
+  "author": "Rafael Pedicini <code@rafrex.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rafrex/detect-touch-events/issues"
+  },
+  "homepage": "https://github.com/rafrex/detect-touch-events#readme"
+}
