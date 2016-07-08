@@ -2,7 +2,9 @@ const detectTouchEvents = {
   update() {
     if (typeof window !== 'undefined') {
       this.hasApi = 'ontouchstart' in window;
-      this.maxTouchPoints = window.navigator && window.navigator.maxTouchPoints;
+      this.maxTouchPoints = this.hasApi ?
+        window.navigator && window.navigator.maxTouchPoints :
+        undefined;
     }
   },
 };
