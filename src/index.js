@@ -1,8 +1,8 @@
 const detectTouchEvents = {
   update() {
     if (typeof window !== 'undefined') {
-      this.hasApi = 'ontouchstart' in window;
-      this.maxTouchPoints = this.hasApi ?
+      detectTouchEvents.hasApi = 'ontouchstart' in window;
+      detectTouchEvents.maxTouchPoints = detectTouchEvents.hasApi ?
         window.navigator && window.navigator.maxTouchPoints :
         undefined;
     }
