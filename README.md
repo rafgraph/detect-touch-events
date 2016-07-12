@@ -44,7 +44,7 @@ detectTouchEvents.update();
 ```
 Note that `maxTouchPoints` may be `undefined` even if `hasApi` is `true` (not all devices repot how many touch points they have). Also note the if `hasApi` is `false`, then `maxTouchPoints` is always `undefined`.
 
-Note that the `update()` function is run once at the time of import to set the object's initial state, and generally doesn't need to be run again. If it doesn't have access to the `window`, then the state will be `undefined` (`detect-touch-events` will not throw an error). If `detect-touch-events` doesn't have access to the `window` at the time of import, you will have to call the `update()` function manually at a later time to update its state.
+Note that the `update()` function is run once at the time of import to set the object's initial state, and generally doesn't need to be run again. If it doesn't have access to the `window`, then the state will be `undefined` (`detect-touch-events` will not throw an error), and you will need to call the `update()` function manually at a later time to update its state.
 
 
 ## Part of the [`detect-it`][detectItRepo] family
