@@ -42,7 +42,19 @@ detectTouchEvents.maxTouchPoints; // maximum number of touch points supported by
 // updating the state - most apps won't need to use this at all
 detectTouchEvents.update();
 ```
-Note that `maxTouchPoints` may be `undefined` even if `hasApi` is `true` (not all devices repot how many touch points they have). Also note the if `hasApi` is `false`, then `maxTouchPoints` is always `undefined`.
+
+```javascript
+/*
+ * note that in the case of a browser that doesn't support touch events,
+ * including when using legacy computer and browser, the default state will be:
+ */
+const detectTouchEvents = {
+  hasApi: false,
+  maxTouchPoints: undefined,
+}
+```
+
+Note that `maxTouchPoints` may be `undefined` even if `hasApi` is `true` (not all touch devices report how many touch points they have). Also note the if `hasApi` is `false`, then `maxTouchPoints` is always `undefined`.
 
 Note that the `update()` function is run once at the time of import to set the object's initial state, and generally doesn't need to be run again. If it doesn't have access to the `window`, then the state will be `undefined` (`detect-touch-events` will not throw an error), and you will need to call the `update()` function manually at a later time to update its state.
 
