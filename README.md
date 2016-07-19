@@ -11,7 +11,7 @@ Note that `detect-touch-events` is one of the micro state machines used by [`det
 *For more information on the touch events api, please see [MDN's Touch Events][mdnTouchEvents], or the [W3C Touch Events specification][w3cSpecLatest].*
 
 
-## `detectTouchEvents` micro state machine
+### `detectTouchEvents` micro state machine
 ```javascript
 const detectTouchEvents = {
   hasApi: boolean,
@@ -22,18 +22,15 @@ const detectTouchEvents = {
 }
 ```
 
-## Installing `detect-touch-events`
+### Installing `detect-touch-events`
 ```terminal
 $ npm install detect-touch-events
 ```
 
-## Importing `detect-touch-events`
+### Using `detect-touch-events`
 ```javascript
 import detectTouchEvents from 'detect-touch-events';
 ```
-
-
-## Using `detect-touch-events`
 ```javascript
 // using the state
 detectTouchEvents.hasApi === true; // touch events api is present in the browser
@@ -46,7 +43,7 @@ detectTouchEvents.update();
 ```javascript
 /*
  * note that in the case of a browser that doesn't support touch events,
- * including when using legacy computer and browser, the default state will be:
+ * including when using a legacy computer and browser, the default state will be:
  */
 const detectTouchEvents = {
   hasApi: false,
@@ -59,7 +56,7 @@ Note that `maxTouchPoints` may be `undefined` even if `hasApi` is `true` (not al
 Note that the `update()` function is run once at the time of import to set the object's initial state, and generally doesn't need to be run again. If it doesn't have access to the `window`, then the state will be `undefined` (`detect-touch-events` will not throw an error), and you will need to call the `update()` function manually at a later time to update its state.
 
 
-## Part of the [`detect-it`][detectItRepo] family
+### Part of the [`detect-it`][detectItRepo] family
 - [`detect-it`][detectItRepo]
   - [`detect-hover`][detectHoverRepo]
   - [`detect-pointer`][detectPointerRepo]
