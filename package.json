@@ -16,6 +16,7 @@
     "url": "git+https://github.com/rafrex/detect-touch-events.git"
   },
   "keywords": [
+    "detect",
     "touch",
     "touch events",
     "touch device"
