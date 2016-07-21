@@ -2,7 +2,7 @@
 
 Detect if the browser supports the touch events api.
 
-[Live detection test][liveDetectionTest]
+[Live detection test][liveDetectionTest] &#8212; [view on npm][onNpm]
 
 Exports a reference to a singleton object (a micro state machine with an update function) with its state set to if the browser supports the touch events api, and if so how many touch points does it have, as well as an `update()` function which re-runs the tests and updates the object's state.
 
@@ -66,6 +66,7 @@ Note that the `update()` function is run once at the time of import to set the o
 
 <!-- links -->
 [liveDetectionTest]: http://detect-it.rafrex.com/#detect-touch-events
+[onNpm]: https://www.npmjs.com/package/detect-touch-events
 [w3cSpecLatest]: https://w3c.github.io/touch-events/
 [mdnTouchEvents]: https://developer.mozilla.org/en-US/docs/Web/API/Touch_events
 [detectItRepo]: https://github.com/rafrex/detect-it
