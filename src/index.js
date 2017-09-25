@@ -1,6 +1,6 @@
 const detectTouchEvents = {
   update() {
-    if (window !== undefined) {
+    if (typeof window !== 'undefined') {
       detectTouchEvents.hasSupport = 'ontouchstart' in window;
       detectTouchEvents.browserSupportsApi = Boolean(window.TouchEvent);
     }
