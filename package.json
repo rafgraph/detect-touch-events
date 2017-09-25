@@ -1,6 +1,6 @@
 {
   "name": "detect-touch-events",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Detect if the browser supports the touch events api",
   "main": "lib/index.js",
   "scripts": {
