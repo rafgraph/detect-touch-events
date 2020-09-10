@@ -67,10 +67,10 @@ Note that the `update()` function is run once at the time of import to set the o
 
 
 <!-- links -->
-[liveDetectionTest]: http://detect-it.rafrex.com/#detect-touch-events
+[liveDetectionTest]: https://detect-it.rafgraph.dev/#detect-touch-events
 [w3cSpecLatest]: https://w3c.github.io/touch-events/
 [mdnTouchEvents]: https://developer.mozilla.org/en-US/docs/Web/API/Touch_events
-[detectItRepo]: https://github.com/rafrex/detect-it
-[detectHoverRepo]: https://github.com/rafrex/detect-hover
-[detectPointerRepo]: https://github.com/rafrex/detect-pointer
-[detectPassiveEventsRepo]: https://github.com/rafrex/detect-passive-events
+[detectItRepo]: https://github.com/rafgraph/detect-it
+[detectHoverRepo]: https://github.com/rafgraph/detect-hover
+[detectPointerRepo]: https://github.com/rafgraph/detect-pointer
+[detectPassiveEventsRepo]: https://github.com/rafgraph/detect-passive-events

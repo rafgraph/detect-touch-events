@@ -13,7 +13,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rafrex/detect-touch-events.git"
+    "url": "git+https://github.com/rafgraph/detect-touch-events.git"
   },
   "keywords": [
     "detect",
@@ -21,12 +21,12 @@
     "touch events",
     "touch device"
   ],
-  "author": "Rafael Pedicini <code@rafrex.com>",
+  "author": "Rafael Pedicini <rafael@rafgraph.dev>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/rafrex/detect-touch-events/issues"
+    "url": "https://github.com/rafgraph/detect-touch-events/issues"
   },
-  "homepage": "https://github.com/rafrex/detect-touch-events#readme",
+  "homepage": "https://github.com/rafgraph/detect-touch-events#readme",
   "devDependencies": {
     "babel-cli": "^6.24.1",
     "babel-eslint": "^7.2.3",
